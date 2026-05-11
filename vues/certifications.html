@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lucka ROLLIN — Certifications</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+
+<header class="hd">
+  <div class="hd-i">
+    <a href="../index.html" class="logo">
+      <span class="logo-n">Lucka ROLLIN</span>
+      <span class="logo-s">BTS SIO — option SISR</span>
+    </a>
+    <button class="nav-toggle" aria-label="Menu" onclick="this.nextElementSibling.classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="hnav">
+      <a href="../index.html">Accueil</a>
+      <a href="competences.html">Compétences</a>
+      <a href="experiences.html">Expériences</a>
+      <a href="projets.html">Projets</a>
+      <a href="veille.html">Veille</a>
+      <a href="certifications.html" class="on">Certifications</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div id="app">
+
+<div class="page-header">
+  <p class="breadcrumb"><a href="../index.html">Accueil</a> <span class="sep">/</span> Certifications</p>
+  <h1 class="page-title">Certifications</h1>
+  <p class="page-sub">Formations et certifications obtenues dans le cadre du BTS SIO.</p>
+</div>
+
+<div class="cert-grid">
+
+  <!-- CISCO -->
+  <div class="cert-card">
+    <div class="cert-logo cisco">
+      <span>CISCO</span>
+    </div>
+    <div class="cert-info">
+      <h3>[Nom de la certification]</h3>
+      <p class="cert-platform">Cisco Networking Academy</p>
+      <p>[À compléter — ex : Introduction to Networks (ITN), ou Cybersecurity Essentials…]</p>
+      <span class="cert-date">[Date d'obtention]</span>
+    </div>
+    <a class="pl" href="#">Voir le certificat →</a>
+  </div>
+
+  <!-- OPENCLASSROOMS -->
+  <div class="cert-card">
+    <div class="cert-logo oc">
+      <span>OC</span>
+    </div>
+    <div class="cert-info">
+      <h3>[Nom du cours]</h3>
+      <p class="cert-platform">OpenClassrooms</p>
+      <p>[À compléter — ex : Administrez un système Linux, ou Gérez votre réseau…]</p>
+      <span class="cert-date">[Date]</span>
+    </div>
+    <a class="pl" href="#">Voir le certificat →</a>
+  </div>
+
+  <!-- FUNMOOC -->
+  <div class="cert-card">
+    <div class="cert-logo fun">
+      <span>FUN</span>
+    </div>
+    <div class="cert-info">
+      <h3>[Nom du cours]</h3>
+      <p class="cert-platform">FUN MOOC</p>
+      <p>[À compléter]</p>
+      <span class="cert-date">[Date]</span>
+    </div>
+    <a class="pl" href="#">Voir le certificat →</a>
+  </div>
+
+  <!-- MICROSOFT LEARN -->
+  <div class="cert-card">
+    <div class="cert-logo ms">
+      <span>MS</span>
+    </div>
+    <div class="cert-info">
+      <h3>[Nom du module]</h3>
+      <p class="cert-platform">Microsoft Learn</p>
+      <p>[À compléter — ex : Fondamentaux Azure, Windows Server Administration…]</p>
+      <span class="cert-date">[Date]</span>
+    </div>
+    <a class="pl" href="#">Voir le badge →</a>
+  </div>
+
+</div>
+
+<div class="notice" style="margin-top: 24px;">
+  💡 Les certificats sont disponibles sur demande ou en cliquant sur les liens ci-dessus.
+</div>
+
+</div>
+
+<footer class="ft">
+  <p>© <span id="year"></span> Lucka ROLLIN — BTS SIO — option SISR &nbsp;·&nbsp; <a href="mailto:lucka.rollin@gmail.com">lucka.rollin@gmail.com</a></p>
+</footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  document.querySelectorAll('.hnav a').forEach(a => a.addEventListener('click', () => document.querySelector('.hnav').classList.remove('open')));
+</script>
+</body>
+</html>
