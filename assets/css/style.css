@@ -325,3 +325,41 @@ textarea.fi { resize: vertical; min-height: 110px; }
   .hero { padding: 40px 0 32px; }
   .skills-g { grid-template-columns: 1fr; }
 }
+
+/* ── VEILLE FILTRES ── */
+.veille-filters {
+  display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px;
+}
+.vfilter {
+  background: var(--card); border: 1.5px solid var(--bd);
+  padding: 6px 16px; border-radius: 999px; font-size: .78rem;
+  font-weight: 500; cursor: pointer; color: var(--mu);
+  font-family: 'Outfit', sans-serif; transition: all .15s;
+}
+.vfilter:hover { color: var(--pd); border-color: var(--p); }
+.vfilter.on { background: var(--p); color: #fff; border-color: var(--p); }
+
+/* ── ARTICLE CARD améliorée ── */
+.article-card {
+  background: var(--card); border: 1px solid var(--bd);
+  border-radius: var(--r); padding: 20px 22px; box-shadow: var(--sh);
+}
+.article-meta {
+  display: flex; align-items: center; gap: 12px;
+  flex-wrap: wrap; margin-bottom: 8px;
+}
+.article-date { font-size: .72rem; color: var(--mu); font-weight: 500; }
+.article-card h3 { font-size: 1rem; margin-bottom: 8px; }
+.article-card > p { font-size: .84rem; color: var(--mu); margin-bottom: 12px; line-height: 1.65; }
+
+.article-impact {
+  background: #f5ede0; border-left: 3px solid var(--p);
+  border-radius: 0 var(--rs) var(--rs) 0;
+  padding: 10px 14px; margin-bottom: 12px;
+}
+.impact-label {
+  font-size: .72rem; font-weight: 600; color: var(--p);
+  text-transform: uppercase; letter-spacing: .4px;
+  display: block; margin-bottom: 4px;
+}
+.article-impact p { font-size: .82rem; color: #5a3e25; }
