@@ -363,3 +363,6 @@ textarea.fi { resize: vertical; min-height: 110px; }
   display: block; margin-bottom: 4px;
 }
 .article-impact p { font-size: .82rem; color: #5a3e25; }
+.cert-logo.anssi { background: #003189; }
+.cert-status { font-size: .75rem; font-weight: 600; display: inline-block; margin-top: 8px; }
+.cert-status.termine { color: #1e6e33; }
