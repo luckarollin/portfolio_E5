@@ -191,7 +191,47 @@
       <p>Diversité des environnements (bureautique, ateliers industriels, ERP SAP, téléphonie IP) et exigences de sécurité — résolu par la standardisation des interventions et la création d'un référentiel documentaire illustré.</p>
     </div>
   </div>
+<!-- PROJET 5 : INFRASTRUCTURE WINDOWS SERVER & HAUTE DISPONIBILITÉ (SIO.LOCAL) -->
+<div class="projet-card" data-public="true">
+  <div class="projet-head">
+    <div>
+      <h3>Infrastructure Active Directory &amp; Haute Disponibilité (sio.local)</h3>
+      <p class="projet-context">Travaux Pratiques (2e année) — ISCB · BTS SIO SISR</p>
+    </div>
+    <div class="tags">
+      <span class="tag">Active Directory</span>
+      <span class="tag">GPO</span>
+      <span class="tag">DFS-N / DFS-R</span>
+      <span class="tag">IIS / HTTPS / NLB</span>
+    </div>
+  </div>
 
+  <div class="projet-grid">
+    <div class="projet-bloc">
+      <span class="bloc-label">🎯 Objectif</span>
+      <p>Déployer une infrastructure d'entreprise complète sous Windows Server (domaine <code>sio.local</code>) avec redondance des services critiques (AD, DNS, DHCP), administration centralisée par GPO, partages répliqués sous DFS et hébergement intranet sécurisé en haute disponibilité[cite: 1, 2, 3, 4].</p>
+    </div>
+    <div class="projet-bloc">
+      <span class="bloc-label">🔧 Technologies utilisées</span>
+      <p>Windows Server (DC1 / DC2), AD DS, DNS, DHCP Failover, GPMC (modèles ADMX, déploiement MSI), NTFS / ABE, DFS-N &amp; DFS-R, IIS 10, certificats TLS / HSTS, cluster NLB, PowerShell[cite: 1, 2, 3, 4].</p>
+    </div>
+    <div class="projet-bloc">
+      <span class="bloc-label">👤 Mon rôle</span>
+      <p>Installation et promotion des deux contrôleurs de domaine, configuration du basculement DHCP (50/50), création des stratégies de sécurité et de personnalisation (SISR/SLAM), mise en place des espaces de noms DFS et sécurisation HTTPS[cite: 1, 2, 3, 4].</p>
+    </div>
+    <div class="projet-bloc">
+      <span class="bloc-label">⚠️ Difficultés &amp; solutions</span>
+      <p>Prévention des conflits de SID lors du clonage de DC2 (résolu via Sysprep), gestion de l'ordre d'application des GPO (LSDOU) et des accès NTFS/ABE, ainsi que le mode multidiffusion NLB pour préserver la réplication entre contrôleurs[cite: 1, 2, 3, 4].</p>
+    </div>
+  </div>
+
+  <div class="projet-footer">
+    <a class="pl" href="../1-TP_Decouverte_Active_Directory_redondance_AD_DNS_DHCP.docx" target="_blank">TP 1 : AD / DNS / DHCP →</a>
+    <a class="pl" href="../2-TP_GPO_Active_Directory.docx" target="_blank">TP 2 : Stratégies de groupe (GPO) →</a>
+    <a class="pl" href="../3-TP_Partages_DFS.docx" target="_blank">TP 3 : Partages &amp; DFS (à venir) →</a>
+    <a class="pl" href="../4-TP_IIS_HTTPS_NLB.docx" target="_blank">TP 4 : IIS, HTTPS &amp; NLB (à venir) →</a>
+  </div>
+</div>
   <div class="projet-footer">
     <a class="pl" href="../Documentation_Alternance_Anonymisee.pdf" target="_blank">Voir la documentation technique (anonymisée) →</a>
   </div>
